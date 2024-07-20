@@ -188,47 +188,7 @@ Console.WriteLine(max1);
 Console.WriteLine(max2);
 Console.WriteLine(max3);
 
-//Convert 2-D array to 1-D array
-int[,] twoDarray = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
-int width = twoDarray.GetLength(0);
-int height = twoDarray.GetLength(1);
-int[] singleDarr = new int[width * height];
-int index1 = 0;
-int index2 = 0;
-for (int i = 0; i < height; i++)
-{
-    for (int j = 0; j < width; j++)
-    {
-        singleDarr[index1] = twoDarray[j, i];
-        Console.Write(singleDarr[index1] + " ");
-        index1++;
-    }
-}
-Console.WriteLine("\n");
-for (int i = 0; i < width; i++)
-{
-    for (int j = 0; j < height; j++)
-    {
-        singleDarr[index2] = twoDarray[i, j];
-        Console.Write(singleDarr[index2] + " ");
-        index2++;
-    }
-}
 
-//Convert 1D array to 2D array
-int[] oneDarray = {1,2,3,4,5,6 };
-int[,] newTwoDarray = new int[3,2];
-int index = 0;
-for (int i=0;i<3;i++) {
-    for (int j = 0; j < 2; j++)
-    {
-        newTwoDarray[i, j] = oneDarray[index];
-        Console.Write(newTwoDarray[i, j]+" ");
-        index++;
-    }
-    Console.WriteLine();
-}
- 
 
 
 
