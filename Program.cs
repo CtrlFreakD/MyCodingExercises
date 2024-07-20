@@ -136,12 +136,12 @@ for (int i = 0; i < arr.Length; i++)
 //find if a positive integer is a prime number or not
 Console.Write("Enter positive integer: ");
 int num = Convert.ToInt32(Console.ReadLine());
-bool isPrime = false;
+bool isPrime = true;
 for (int i = 2; i < num; i++)
 {
-    if (num % i == 0) isPrime = true;
+    if (num % i == 0) isPrime = false;
 }
-if (isPrime == false)
+if (isPrime == true)
 {
     Console.WriteLine("Number is prime");
 }
